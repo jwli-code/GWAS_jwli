@@ -1,1 +1,26 @@
 a pipeline for gwas
+
+
+  [1/8] 创建 Python 环境...
+  micromamba create -n GWAS python=3.10 -y
+
+  [2/8] 安装 Python 包...
+  micromamba install -n GWAS -c conda-forge numpy pandas scipy -y
+
+  [3/8] 安装 vcftools...
+  micromamba install -n GWAS -c bioconda vcftools -y
+
+  [4/8] 安装 plink2...
+  micromamba install -n GWAS -c bioconda plink2 -y
+
+  [5/8] 安装 gemma...
+  micromamba install -n GWAS -c bioconda gemma -y
+
+  [6/8] 安装 gcta...
+  micromamba install -n GWAS -c bioconda gcta -y
+
+  [7/8] 安装 R 及相关包...
+  micromamba install -n GWAS -c conda-forge r-base r-cmplot r-dplyr -y
+
+  [8/8] 安装其他工具...
+  micromamba install -n GWAS -c bioconda htslib bcftools samtools -y
