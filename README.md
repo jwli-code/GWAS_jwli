@@ -1,1 +1,1 @@
-# GWAS_jwli111
+a pipeline for gwas
